@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { subject } from "@casl/ability";
 import { AbilityContext, Can } from "../context/can";
+import { Link } from "react-router-dom";
 const data = [
   {
     userId: "1",
@@ -32,6 +33,7 @@ const AboutPage = () => {
       {/* {ability.can("update", "Post", { userId: "2" }) && (
         <button>Edit</button>
       )} */}
+      <Link to={"/"}>Home</Link>
     </div>
   );
 };
