@@ -21,7 +21,7 @@ const Blocker = ({ children }) => {
     const onBeforeUnload = (e) => {
       e.preventDefault();
 
-      e.returnValue = "test";
+      e.returnValue = "new merge request";
     };
     
     window.addEventListener("beforeunload", onBeforeUnload);
