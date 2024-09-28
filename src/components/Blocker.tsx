@@ -20,7 +20,8 @@ const Blocker = ({ children }) => {
 
     const onBeforeUnload = (e) => {
       e.preventDefault();
-      e.returnValue = "asdasdasd";
+
+      e.returnValue = "test";
     };
     
     window.addEventListener("beforeunload", onBeforeUnload);
